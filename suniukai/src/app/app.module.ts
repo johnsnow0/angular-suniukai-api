@@ -8,6 +8,7 @@ import { DokumentacijaComponent } from './komponentai/dokumentacija/dokumentacij
 import { VeislesComponent } from './komponentai/veisles/veisles.component';
 import { ApieComponent } from './komponentai/apie/apie.component';
 import { IkeltiSuniukaComponent } from './komponentai/ikelti-suniuka/ikelti-suniuka.component';
+import { PagrindinisComponent } from './komponentai/pagrindinis/pagrindinis.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { IkeltiSuniukaComponent } from './komponentai/ikelti-suniuka/ikelti-suni
     DokumentacijaComponent,
     VeislesComponent,
     ApieComponent,
-    IkeltiSuniukaComponent
+    IkeltiSuniukaComponent,
+    PagrindinisComponent
   ],
   imports: [
     BrowserModule,

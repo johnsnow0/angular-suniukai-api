@@ -1,0 +1,15 @@
+.root {
+    width:400px;
+    background-color: rgb(228, 228, 228);
+    
+
+}
+
+.logo {
+    padding-top: 40px;
+    padding-left: 20px;
+    
+}
+.img_style {
+    width: 30%;
+}
