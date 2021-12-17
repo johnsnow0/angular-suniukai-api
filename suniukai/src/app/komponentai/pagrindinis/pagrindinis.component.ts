@@ -14,4 +14,7 @@ export class PagrindinisComponent implements OnInit {
 
 value = "https://dog.ceo/api/breeds/image/random"
 
+gautiSuniuka() {
+
+}
 }
