@@ -14,19 +14,18 @@
   </p>
 
 
-  <span class="code">https://dog.ceo/api/breeds/image/random</span>
+  <span class="code">https://rest-api-uzuotys4.herokuapp.com/suniukas</span>
 
-  <button class="button" (click)="gautiSuniuka()">Gauti</button>
+  <button class="button" (click)="gautiSuni()">Gauti</button>
 <br><br><br><br>
   <div class="json-lentele">
     <div>
       <p>JSON</p>
-      <pre>
-        jjllllllllllllllllllllll
-      </pre>
+      <pre>{{atvaizduotiObjekta(suo)}}</pre>
     </div>
-    <div>
+    <div *ngIf="suo">
       <p>IMAGE</p>
+      <img src="{{suo.nuotrauka}}" alt="">
     </div>
   </div>
 

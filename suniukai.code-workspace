@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "../mano-eshopas"
+		},
+		{
+			"path": "../angular-projektas-team-app"
 		}
 	],
 	"settings": {}

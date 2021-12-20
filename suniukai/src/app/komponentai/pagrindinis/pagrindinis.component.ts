@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { PagrindinisService } from 'src/app/servisai/pagrindinis.service';
+
 @Component({
   selector: 'app-pagrindinis',
   templateUrl: './pagrindinis.component.html',
@@ -7,14 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagrindinisComponent implements OnInit {
 
-  constructor() { }
+suo: any;
+
+  constructor(private gautiSuniuka: PagrindinisService) { }
 
   ngOnInit(): void {
   }
 
-value = "https://dog.ceo/api/breeds/image/random"
+gautiSuni() {
 
-gautiSuniuka() {
+  this.gautiSuniuka.gautiSuniuka().subscribe((data)=>this.suo = data);
 
+  console.log(this.suo);
 }
+
+atvaizduotiObjekta(objektas: any) {
+  return JSON.stringify(objektas, null, 2);(objektas);
+}
+
 }

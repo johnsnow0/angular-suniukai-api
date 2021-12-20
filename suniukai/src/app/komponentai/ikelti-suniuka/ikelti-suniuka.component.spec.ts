@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { IkeltiSuniukaComponent } from './ikelti-suniuka.component';
+
 
 describe('IkeltiSuniukaComponent', () => {
   let component: IkeltiSuniukaComponent;
