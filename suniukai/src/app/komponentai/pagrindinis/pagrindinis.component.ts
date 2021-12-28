@@ -14,6 +14,7 @@ suo: any;
   constructor(private gautiSuniuka: PagrindinisService) { }
 
   ngOnInit(): void {
+    this.gautiSuni();
   }
 
 gautiSuni() {

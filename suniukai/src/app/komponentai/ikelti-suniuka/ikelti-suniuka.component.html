@@ -1,10 +1,17 @@
-<form [formGroup]="suniukoForma" (ngSubmit)="idetiSuniuka()"> 
-<input type="text" placeholder="Suniuko vardas" formControlName="vardas">
-<br><br>
-<input type="text" placeholder="Suniuko nuotraukos URL" formControlName="nuotrauka">
-<br><br>
-<input type="text" placeholder="Suniuko veisle" formControlName="veisle">
-<br><br>
-<button>ideti suniuka</button>
+<div class="pagrindinis">
+    <h2>Čia galite įkelti savo šuniuką</h2>
 
-</form>
+    <div class="forma">
+
+        <form [formGroup]="suniukoForma" (ngSubmit)="idetiSuniuka()">
+            <input type="text" placeholder="Suniuko vardas" formControlName="vardas">
+            <br><br>
+            <input type="text" placeholder="Suniuko nuotraukos URL" formControlName="nuotrauka">
+            <br><br>
+            <input type="text" placeholder="Suniuko veisle" formControlName="veisle">
+            <br><br>
+            <button>ideti suniuka</button>
+
+        </form>
+    </div>
+</div>

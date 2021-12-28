@@ -15,17 +15,22 @@
   <span class="code">https://rest-api-uzuotys4.herokuapp.com/suniukas</span>
 
   <button class="button" (click)="gautiSuni()">Gauti</button>
-<br><br><br><br>
-  <div class="json-lentele">
-    <div>
-      <p>JSON</p>
-      <pre>{{atvaizduotiObjekta(suo)}}</pre>
+  <br><br><br><br>
+  <div class="atvaizdavimas">
+    <div class="json-lentele">
+      <div>
+        <p>JSON</p>
+        <pre>{{atvaizduotiObjekta(suo)}}</pre>
+      </div>
+
     </div>
-    <div *ngIf="suo">
+    <div class="img">
       <p>IMAGE</p>
-      <img src="{{suo.nuotrauka}}" alt="">
+      <div *ngIf="suo">
+
+        <img src="{{suo.nuotrauka}}" alt="">
+      </div>
     </div>
   </div>
-
 
 </div>
